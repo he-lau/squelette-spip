@@ -1,0 +1,55 @@
+<header>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="nav">
+
+  <a class="navbar-brand" href="#URL_SITE_SPIP?lang=#LANG">
+  <img class=""src="#CHEMIN{content/img/logo-p8.svg}" alt="logo" height="45" width="160">
+  </a>
+
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+          <B_menu>
+          <!-- RUBRIQUE "menu" id = 22-->
+          <BOUCLE_menu(RUBRIQUES) {id_parent=22}>
+          <!-- menu niveau 1-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              #TITRE
+            </a>
+          <!-- menu niveau 1-->
+
+          <!-- menu niveau 2 (articles) -->
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <BOUCLE_subArt(ARTICLES) {id_rubrique} {par num titre}>
+            <a class="dropdown-item" href="#URL_ARTICLES">#TITRE</a>
+            </BOUCLE_subArt>
+
+          <!-- menu niveau 2 (articles) -->
+
+
+          <!-- menu niveau 2 (rubriques) -->
+
+          <BOUCLE_subRub(RUBRIQUES) {id_parent} {par num titre}>
+          <a class="dropdown-item" href="#URL_RUBRIQUE">#TITRE</a>
+          </BOUCLE_subRub>
+          </div>
+          <!-- menu niveau 2 (rubriques) -->
+
+          </li>
+
+          </BOUCLE_menu>
+          </B_menu>
+          <b>Menu non trouvé, contacter l'administrateur.</b>
+          <//B_menu>
+
+
+      </ul>
+      </div>
+    </nav>
+
+</header>
