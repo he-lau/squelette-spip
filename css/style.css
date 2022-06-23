@@ -6,49 +6,18 @@ body {
   height: 1000px;
 }
 
-
-#navbarSupportedContent {
-
+/* menu */
+.nav-item a:hover {
+  color: 	white !important;
+  background-color: #E7C8F2 !important;
 }
 
-#home {
-  background-image: url('../content/img/fond.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  display: table;
-  height: 40%;
-  position: relative;
-  width: 100%;
-  background-attachment: fixed;
+.nav-item #navbarDropdown:hover {
+  border-radius: 1rem;
 }
 
-.landing-text {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-
-}
-
-.landing-text h1 {
-  margin-top: 72px;
-  font-size: 62px;
-  font-weight:bold ;
-  color: white;
-}
-
-.landing-text a {
-  font-size: 14px;
-  margin-top: 36px;
-  text-decoration:underline;
-}
-
-#intro {
-  background-color: grey;
-  height: 1000px;
-}
 
 footer {
-  background-color: blue;
+
   height: 400px;
 }
