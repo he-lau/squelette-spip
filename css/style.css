@@ -9,13 +9,16 @@ body {
 /* menu */
 .nav-item a:hover {
   color: 	white !important;
-  background-color: #E7C8F2 !important;
+  background-color: #C896DA !important;
 }
 
 .nav-item #navbarDropdown:hover {
   border-radius: 1rem;
 }
 
+h1, h2 {
+  
+}
 
 footer {
 

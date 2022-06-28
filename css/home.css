@@ -4,7 +4,6 @@
 #recherche:focus {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 	outline: none;
-
 }
 
 .landing-text #recherche {
@@ -12,7 +11,7 @@
 	border: none;
 	padding: 4px;
 	padding-left: 16px;
-  width: 60%;
+  width: 30%;
 }
 
 .landing-text input.submit {
@@ -26,13 +25,14 @@
 
 .landing-text input.submit:hover {
 	cursor: pointer;
-	color: #AD21E0;
+	color: #A43FC9;
 	transition: 0.3s
 }
 
 /* Bandeau de presenattion */
-#home {
-  background-image: url('../content/img/fond.jpg');
+#band {
+  background-image: url('../content/img/topography.svg');
+  background-color: #C896DA;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -47,13 +47,14 @@
   display: table-cell;
   text-align: center;
   vertical-align: middle;
+  margin: auto;
 }
 
 .landing-text h1 {
   margin-top: 42px;
   margin-bottom: 50px;
   font-size: 62px;
-  font-weight:bold ;
+  font-weight:bold;
   color: white;
 }
 
@@ -61,10 +62,208 @@
   font-size: 14px;
   margin-top: 36px;
   text-decoration:underline;
+  }
+
+.home a {
+  color: #A43FC9 !important;;
+  text-decoration:underline;
+}
+
+.home hr {
+  width: 90%;
+
 }
 
 /* 1. presenattion de l'ufr */
 #intro {
+  margin-top: 10%;
+  margin-bottom: 80px;
+}
 
-  height: 1000px;
+#intro h1 {
+  margin-bottom: 60px;
+}
+
+#intro h2 {
+  margin-top: 80px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+
+#intro img {
+  height: 250px;
+  width: 100%;
+}
+
+#intro a:hover {
+  color: white !important;
+  background-color: #C896DA !important;
+  padding: 4px;
+}
+
+
+/* Menu accordeon*/
+#accordion .card {
+  border: none;
+  width: 80%;
+  margin: auto;
+}
+
+#accordion .card-header {
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: 2px solid #FF6873;
+    border-radius: 1rem !important;
+}
+#accordion .card-header button{
+  color: #FF6873;
+  width: 100%;
+  text-align:center;
+}
+#accordion .card-header button:hover {
+  background-color: #FF6873;
+  color: white
+}
+
+#accordion .card-body {
+    border: 2px solid #FF6873;
+    border-radius: 1rem !important;
+}
+
+#accordion .card .card-header .btn-link:after {
+  content: "-";
+  font-weight: 600;
+  float: right;
+}
+
+#accordion .card .card-header .btn-link.collapsed:after {
+  content: "+";
+}
+
+/* S'informer - Formations */
+
+#info-formation {
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+#carouselExampleIndicators {
+  border: 2px solid #6E0096;
+  border-radius: 1rem;
+  padding: 12px
+}
+
+.carousel-control-prev-icon {
+ background-image: url('../content/img/carousel-prev.svg') !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url('../content/img/carousel-next.svg') !important;
+}
+
+.carousel .carousel-indicators li {
+  background-color: red;
+  cursor: pointer;
+}
+
+.carousel .carousel-indicators li.active {
+  background-color: #6E0096;
+}
+
+.carousel-item a {
+  text-decoration: none;
+}
+
+.carousel-item img:hover {
+  transition: 0.5s;
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}
+
+.carousel-item h2 {
+  background-color: #6E0096;
+  color: white
+}
+
+#info-formation h1{
+  margin-bottom: 60px;
+}
+
+#informations {
+  width: 90% !important;
+  border: 2px solid #FF6873;
+  border-radius: 1rem;
+  padding: 12px;
+  margin-bottom: 40px;
+}
+
+#informations .card-link {
+  margin-left: 0 !important;
+  color: #FF6873 !important
+}
+
+#informations .card-link:hover {
+  background-color: #FF6873 !important;
+  color: white !important;
+  padding: 4px;
+}
+
+#informations h5 span{
+  background-color: #FF6873;
+  color: white;
+}
+
+
+/* Agenda - timeline*/
+#agenda {
+  margin-top: 120px;
+  padding-bottom: 80px;
+  background-color: #FAEEFF;
+}
+
+#agenda h1 {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+#agenda .border-right {
+  border-right: 2px solid #6E0096 !important;
+}
+
+#agenda .border {
+  border: none !important;
+}
+
+#agenda .badge-pill {
+  background-color: #A43FC9 !important;
+}
+
+#agenda h5 {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+
+
+#agenda .card {
+  border: 2px solid !important;
+  border-radius: 1rem;
+  padding: 4px;
+  width: 95%
+}
+
+#agenda .card-title {
+  margin-bottom: 24px;
+}
+
+#agenda .card-body a {
+  float: right;
+}
+
+#agenda .card-body a:hover {
+  color: white !important;
+  background-color: #C896DA !important;
+  padding: 4px;
 }
